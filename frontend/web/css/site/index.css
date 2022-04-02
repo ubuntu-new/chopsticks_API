@@ -1,0 +1,16 @@
+.col-sm-4, .col-sm-3, .col-lg-2 {
+    padding:0 5px  !important;
+    margin: 0;
+}
+
+.card-body {
+    padding:  0.8rem !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 2px 0 !important;
+}
+
+[class*="aab"] {
+height: auto !important;
+}

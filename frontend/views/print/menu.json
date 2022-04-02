@@ -1,0 +1,225 @@
+{
+  "attributes": [
+    {
+      "id": "side_1",
+      "name": "French fries (small)",
+      "selected_by_default": "true",
+      "price_impact": "0.0",
+      "available": false
+    },
+    {
+      "id": "side_2",
+      "name": "French fries (medium)",
+      "selected_by_default": "false",
+      "price_impact": "1.0",
+      "available": true
+    },
+    {
+      "id": "side_3",
+      "name": "Salad (small)",
+      "selected_by_default": "true",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "side_4",
+      "name": "Salad (medium)",
+      "selected_by_default": "false",
+      "price_impact": "1.0"
+    },
+    {
+      "id": "drink_1",
+      "name": "Water (0,5l)",
+      "selected_by_default": "false",
+      "price_impact": "1.0"
+    },
+    {
+      "id": "drink_2",
+      "name": "Lemonade (0,5l)",
+      "selected_by_default": "false",
+      "price_impact": "2.0"
+    },
+    {
+      "id": "burger_type_1",
+      "name": "Beef burger",
+      "selected_by_default": "false",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "burger_type_2",
+      "name": "Chicken burger",
+      "selected_by_default": "false",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "salad_type_1",
+      "name": "Caesar salad",
+      "selected_by_default": "false",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "salad_type_2",
+      "name": "Greek salad",
+      "selected_by_default": "false",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "pizza_size_1",
+      "name": "Medium (16cm)",
+      "selected_by_default": "false",
+      "price_impact": "0.0"
+    },
+    {
+      "id": "pizza_size_2",
+      "name": "Family size (30cm)",
+      "selected_by_default": "false",
+      "price_impact": "4.0"
+    }
+  ],
+  "attribute_groups": [
+    {
+      "id": "sides_1",
+      "name": "Choose a side",
+      "min": "0",
+      "max": "1",
+      "collapse": "true",
+      "multiple_selection": "false",
+      "attributes": [
+        "side_1",
+        "side_2",
+        "side_3",
+        "side_4"
+      ]
+    },
+    {
+      "id": "drinks_1",
+      "name": "Choose a drink",
+      "min": "1",
+      "max": "1",
+      "collapse": "false",
+      "multiple_selection": "false",
+      "attributes": [
+        "drink_1",
+        "drink_2"
+      ]
+    },
+    {
+      "id": "burger_types_1",
+      "name": "Choose the type of burger",
+      "min": "1",
+      "max": "1",
+      "collapse": "true",
+      "multiple_selection": "false",
+      "attributes": [
+        "burger_type_1",
+        "burger_type_2"
+      ]
+    },
+    {
+      "id": "salad_types_1",
+      "name": "Choose the type of salad",
+      "min": "1",
+      "max": "1",
+      "collapse": "false",
+      "multiple_selection": "false",
+      "attributes": [
+        "salad_type_1",
+        "salad_type_2"
+      ]
+    },
+    {
+      "id": "pizza_sizes_1",
+      "name": "Choose the size of your pizza",
+      "min": "1",
+      "max": "1",
+      "collapse": "false",
+      "multiple_selection": "false",
+      "attributes": [
+        "pizza_size_1",
+        "pizza_size_2"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "burger_1",
+      "name": "Burger + side + drink",
+      "price": "7.5",
+      "image_url": "https://i.imgur.com/Mcgmjaz.png",
+      "description": "Combination of delicious burger, a side and a drink",
+      "attributes_groups": [
+        "sides_1",
+        "drinks_1",
+        "burger_types_1"
+      ],
+      "available": false
+    },
+    {
+      "id": "salad_1",
+      "name": "Salad + drink",
+      "price": "5.0",
+      "image_url": "https://i.imgur.com/Tsj3NOK.png",
+      "description": "Healthy salad and a drink",
+      "attributes_groups": [
+        "drinks_1",
+        "salad_types_1"
+      ],
+      "available": true
+    },
+    {
+      "id": "pizza_1",
+      "name": "Pizza Margherita",
+      "price": "10.0",
+      "image_url": "https://i.imgur.com/Qj5MlEH.png",
+      "description": "Amazing pizza margherita",
+      "attributes_groups": [
+        "pizza_sizes_1"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "name": "Menus",
+      "position": "0",
+      "sections": [
+        {
+          "name": "Burger menus",
+          "position": "1",
+          "products": [
+            "burger_1"
+          ]
+        },
+        {
+          "name": "Salad menus",
+          "position": "2",
+          "products": [
+            "salad_1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pizzas",
+      "position": "1",
+      "sections": [
+        {
+          "name": "Pizzas",
+          "position": "1",
+          "products": [
+            "pizza_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "supercollections": [
+    {
+      "name": "Lunch Menu",
+      "position": "0",
+      "image_url": "https://i.imgur.com/Qj5DlEH.png",
+      "collections": [
+        "Menus",
+        "Pizzas"
+      ]
+    }
+  ]
+}

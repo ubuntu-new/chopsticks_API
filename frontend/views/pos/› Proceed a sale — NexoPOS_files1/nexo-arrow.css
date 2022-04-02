@@ -1,0 +1,40 @@
+.ar-up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 15px solid #ADFF77;
+	top: -17px;
+	margin-right: 5px;
+	position: relative;
+}
+.ar-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 15px solid #FF8080;
+	top: 17px;
+	margin-right: 5px;
+	position: relative;
+}
+.ar-invert-up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 15px solid #ADFF77;
+	top: 17px;
+	margin-right: 5px;
+	position: relative;
+}
+.ar-invert-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 15px solid #FF8080;
+	top: -17px;
+	margin-right: 5px;
+	position: relative;
+}

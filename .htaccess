@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# End the processing, if a rewrite already occurred
+RewriteRule ^(frontend|rest)/web/ - [L]
+
+# Handle the case of backend, skip ([S=1]) the following rule, if current matched
+#RewriteRule ^worktddask(/(.*))?$ worktask/web/$2 [S=1]
+RewriteRule ^rest(/(.*))?$ rest/web/$2 [S=1]
+RewriteRule ^(frontend)(/(.*))?$ (frontend)/web/$2 [S=1]
+
+# handle the case of frontend
+RewriteRule .* frontend/web/$0
+
+
+
+
+

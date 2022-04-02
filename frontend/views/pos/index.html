@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    .w-b-1
+    {
+        background-color: #ffffff;
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+        margin: 4px;
+        box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -webkit-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -moz-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+
+    }
+    .w-1
+    {
+        background-color: #0d6aad;
+        height: 60px;
+        width: 44px;
+        border-radius: 10px;
+        margin: 4px;
+        box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -webkit-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -moz-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .w-r-1
+    {
+        background-color: #D73133;
+        height: 58px ;
+        width: 44px ;
+        border-radius: 4px;
+        margin: 4px 4px 4px 14px;
+        box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -webkit-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -moz-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .w-y-1
+    {
+        background-color: #FFD141;
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+        margin: 4px;
+        box-shadow: 1px -1px 11px 1px rgba(23, 21, 21, 0.2) inset;
+        -webkit-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -moz-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .w-g-1
+    {
+        background-color: #004006;
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+        margin: 4px;
+        box-shadow: 1px -1px 11px 1px rgba(23, 21, 21, 0.2) inset;
+        -webkit-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        -moz-box-shadow: 1px -1px 11px 1px rgba(23,21,21,0.2) inset;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+</style>
+<body>
+
+
+<div class="container" style="width: 1024px !important;">
+    <div class="row">
+        <div class="col-3">
+                    <div class="sidebar-content ">
+                        <div class="card-body chat-fixed-search">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="ft-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="pos-customer-box"
+                                       placeholder="Enter Customer Name or Mobile Number to search"
+                                       aria-describedby="button-addon2">
+                                <div class="input-group-append" id="button-addon2">
+                                    <button class="btn btn-primary" type="button" data-toggle="modal"
+                                            data-target="#Pos_addCustomer"> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="users-list-padding media-list">
+
+                                <br>
+                                <div class="row bg-gradient-directional-purple white m-0 pt-1 pb-1">
+                                    <div class="col-6 ">
+                                        <strong>Products</strong>
+                                    </div>
+                                    <div class="col-3">
+                                        <strong>Price</strong>
+                                    </div>
+                                    <div class="col-3">
+                                        <strong>Total</strong>
+                                    </div>
+                                </div>
+                                <div id="saman-pos2">
+                                    <div id="pos_items">
+                                        <div class="row  m-0 pt-1 pb-1 border-bottom" id="ppid-1">
+                                            <div class="col-6 ">
+                                                Papa Ronney - 2
+                                            </div>
+                                            <div class="col-3"> 386.00</div>
+                                            <div class="col-3"><strong><span class="ttlText" id="result-1">419.35</span></strong><a
+                                                    data-rowid="1" class="red removeItem" title="Remove"> <i
+                                                    class="fa fa-trash"></i> </a></div>
+                                            </div>
+
+                                    </div>
+                                </div>
+
+
+                                <hr class="mt-1">
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <strong> Shipping</strong>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" class="form-control form-control-sm ">
+                                    </div>
+                                    <div class="col-3">
+                                        ( Tax $ <span id="ship_final">0.00</span> )
+                                    </div>
+                                </div>
+
+
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <strong> Total Tax</strong>
+                                    </div>
+                                    <div class="col-3">$ <span id="taxr" class="mr-1">0.00</span>
+                                    </div>
+                                </div>
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <strong> Total Discount</strong>
+                                    </div>
+                                    <div class="col-9">$ <span id="discs" class="lightMode mr-1">0.00</span>
+                                        <small>(Products)</small>
+                                    </div>
+                                </div>
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <strong> Grand Total</strong>
+                                    </div>
+                                    <div class="col-9">$ <span class="font-medium-1 blue text-bold-600" id="bigtotal">0.00</span>
+                                    </div>
+                                </div>
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <strong> Extra Discount</strong>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" class="form-control form-control-sm ">
+                                        <input type="hidden" name="after_disc" id="after_disc" value="0">
+                                    </div>
+                                    <div class="col-3">
+                                        ( $ <span id="disc_final">0</span> )
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                                <div class="m-1">
+
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="btn btn-outline-primary  mr-1 mb-1" id="base-tab1"
+                                               data-toggle="tab" aria-controls="tab1" href="#tab1" role="tab"
+                                               aria-selected="false"><i class="fa fa-trophy"></i>
+                                                Coupon</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-outline-secondary mr-1 mb-1" id="base-tab2"
+                                               data-toggle="tab" aria-controls="tab2" href="#tab2" role="tab"
+                                               aria-selected="false"><i class="icon-handbag"></i>
+                                                POS Settings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-outline-danger  mr-1 mb-1" id="base-tab3"
+                                               data-toggle="tab" aria-controls="tab3" href="#tab3" role="tab"
+                                               aria-selected="false"><i class="fa fa-save"></i> Draft(s)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-outline-success mb-1" id="base-tab4" data-toggle="tab"
+                                               aria-controls="tab4" href="#tab4" role="tab" aria-selected="false"><i
+                                                    class="fa fa-cogs"></i>
+                                                Invoice Properties</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content px-1 pt-1">
+                                        <div class="tab-pane" id="tab1" role="tabpanel" aria-labelledby="base-tab1">
+                                            <div class="input-group">
+
+                                                <input type="text" class="form-control" id="coupon" name="coupon"><input
+                                                    type="hidden" name="coupon_amount" id="coupon_amount"
+                                                    value="0"><span class="input-group-addon round"> <button
+                                                    class="apply_coupon btn btn-small btn-primary sub-btn">Apply</button></span>
+
+
+                                            </div>
+                                            <input type="hidden" class="text-info" name="i_coupon" id="i_coupon"
+                                                   value="">
+                                            <span class="text-primary text-bold-600" id="r_coupon"></span>
+                                        </div>
+                                        <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="base-tab2">
+                                            <div class="row">
+                                               <!-- <div class="col-4 blue text-xs-center">Warehouse <select
+                                                        id="v2_warehouses" class="selectpicker form-control round teal">
+                                                    <option value="0">*All</option>
+                                                    <option value="0">All</option>
+                                                    <option value="1">Main WareHouse</option>
+                                                    <option value="2">France</option>
+                                                    <option value="3">China</option>
+                                                    <option value="4">Croatia</option>
+                                                    <option value="5">Albania</option>
+                                                    <option value="6">Bulgaria</option>
+                                                    <option value="7">Japan</option>
+                                                    <option value="8">Guatemala</option>
+                                                    <option value="9">USA</option>
+                                                    <option value="10">UK</option>
+                                                    <option value="11">USA</option>
+                                                </select></div>-->
+                                                <div class="col-4 blue text-xs-center">Tax <select
+                                                        class="form-control round"
+                                                        onchange="changeTaxFormat(this.value)" id="taxformat">
+                                                    <option value="yes" data-tformat="yes">On</option>
+                                                    <!--<option value="inclusive" data-tformat="incl">Inclusive</option>
+                                                    <option value="off" data-tformat="off">Off</option>
+                                                    <option value="yes" data-tformat="cgst">CGST + SGST</option>
+                                                    <option value="yes" data-tformat="igst">IGST</option>
+                                                    <option value="inclusive" data-tformat="inclusive" data-trate="10">
+                                                        Custom 10% Inclusive
+                                                    </option>
+                                                    <option value="yes" data-tformat="cgst" data-trate="12">CGST 6% +
+                                                        SGST 6% Exclusive
+                                                    </option>
+                                                    <option value="yes" data-tformat="yes" data-trate="20">VAT 20%
+                                                        Exclusive
+                                                    </option>-->
+                                                </select></div>
+                                                <div class="col-4 blue text-xs-center"> Discount <select class="form-control round teal">
+
+                                                    <option value="%">Discount After </option>
+                                                    <!--<option value="%"> % Discount After TAX</option>
+                                                    <option value="flat">Flat Discount After TAX</option>
+                                                    <option value="b_p"> % Discount Before TAX</option>
+                                                    <option value="bflat">Flat Discount Before TAX</option>-->
+                                                </select></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="base-tab3">
+                                            <li class="indigo p-1"><a href="#"> #1027
+                                                (2020-05-17)</a></li>
+                                        </div>
+                                       <!-- <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="base-tab4">
+                                            <div class="form-group row">
+                                                <div class="col-sm-3"><label for="invocieno" class="caption">Invoice
+                                                    Number</label>
+
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="icon-file-text-o"
+                                                                                             aria-hidden="true"></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Invoice #"
+                                                               name="invocieno" id="invocieno" value="1030">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3"><label for="invocieno"
+                                                                             class="caption">Reference</label>
+
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="icon-bookmark-o"
+                                                                                             aria-hidden="true"></span>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Reference #" name="refer">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-sm-3"><label for="invociedate" class="caption">Invoice
+                                                    Date</label>
+
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="icon-calendar4"
+                                                                                             aria-hidden="true"></span>
+                                                        </div>
+                                                        <input type="text" class="form-control required"
+                                                               placeholder="Billing Date" name="invoicedate"
+                                                               data-toggle="datepicker" autocomplete="false">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3"><label for="invocieduedate" class="caption">Invoice
+                                                    Due Date</label>
+
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><span class="icon-calendar-o"
+                                                                                             aria-hidden="true"></span>
+                                                        </div>
+                                                        <input type="text" class="form-control required" id="tsn_due"
+                                                               name="invocieduedate" placeholder="Due Date"
+                                                               data-toggle="datepicker" autocomplete="false">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    Payment Terms <select name="pterms"
+                                                                          class="selectpicker form-control">
+                                                    <option value="1">Payment On Receipt</option>
+                                                </select>
+                                                    Payment Currency for your client <select name="mcurrency"
+                                                                                             class="selectpicker form-control">
+                                                    <option value="0">Default</option>
+                                                    <option value="1">£ (GBP)</option>
+                                                    <option value="2">BTC (BTC)</option>
+                                                    <option value="3">₹ (INR)</option>
+                                                </select></div>
+                                                <div class="col-sm-6">
+                                                    <label for="toAddInfo" class="caption">Invoice Note</label>
+                                                    <textarea class="form-control" name="notes" rows="2"></textarea>
+                                                </div>
+                                            </div>
+
+
+                                        </div>-->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-9  mt-4">
+            <div class="content-wrapper">
+                <div class="content-body">
+                    <section class="chat-app-window">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="position-relative has-icon-left">
+                                    <input type="text" class="form-control text-center round mousetrap"
+                                           name="product_barcode" placeholder="Enter Product name, code or scan barcode"
+                                           id="v2_search_bar" autocomplete="off" autofocus="autofocus">
+                                    <div class="form-control-position">
+                                        <i class="icon-barcode2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3  grey text-xs-center"><select id="v2_categories" class="selectpicker form-control round teal">
+                                <option value="0">All</option>
+                                <option value="12">Pizza</option>
+                                <option value="11">Drinks</option>
+                            </select></div>
+                        </div>
+                        <hr class="white">
+
+                        <div class="row m-0">
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>0</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>1</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>2</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>3</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>4</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>5</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>6</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>7</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>8</span></strong>
+                            </div>
+                            <div class="col w-b-1 d-flex align-items-center">
+                                <strong><span>9</span></strong>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-lg-1 mt-3">
+                                <div class="row">
+
+                                    <div class="col w-g-1  d-flex   align-items-center">
+                                        <strong><span>Clear</span></strong>
+                                    </div>
+                                    <div class="col w-g-1  d-flex   align-items-center">
+                                        <strong><span>Clear</span></strong>
+                                    </div>
+                                    <div class="col w-g-1  d-flex   align-items-center">
+                                        <strong><span>Clear</span></strong>
+                                    </div>
+
+                                    <div class="col w-y-1 d-flex align-items-center">
+                                       <strong><span> &nbsp; S &nbsp;</span></strong>
+                                    </div>
+                                    <div class="col w-y-1 d-flex align-items-center">
+                                        <strong><span> &nbsp; M &nbsp;</span></strong>
+                                    </div>
+                                    <div class="col w-y-1  d-flex   align-items-center">
+                                        <strong><span> &nbsp; XL &nbsp;</span></strong>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-11 mt-3">
+                                <div class="row">
+                                    <div class="col-2 w-r-1 d-flex  align-items-center">
+                                        <strong><span>Opt</span></strong>
+                                    </div>
+                                    <div class="col-2 w-r-1 d-flex  align-items-center">
+                                        <strong><span>Opt</span></strong>
+                                    </div>
+                                    <div class="col-2 w-r-1 d-flex  align-items-center">
+                                        <strong><span>Opt</span></strong>
+                                    </div>
+                                    <div class="col-2 w-r-1 d-flex  align-items-center">
+                                        <strong><span>Opt</span></strong>
+                                    </div>
+                                    <div class="col-2 w-r-1 d-flex  align-items-center">
+                                        <strong><span>Opt</span></strong>
+                                    </div>
+                                </div>
+                                <div class="pt-3 ml-3 ">
+                                    <div class="row">
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2 border mb-1">
+                                            <div class=" rounded">
+                                                <a class="round">
+                                                    <img class="round"
+                                                         src="https://ronnyspizza.ge/wp-content/uploads/2020/03/G9QGVfVX_400x400.jpg"
+                                                         style="max-height: 100%;max-width: 100%">
+                                                    <div class="text-center" style="margin-top: 4px;">
+                                                        <small style="white-space: pre-wrap;">Papa Ronny
+                                                        </small>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </section>
+                    <section class="chat-app-form">
+                        <div class="form-group text-center">
+                            <!-- Button Group with Icons in different sizes -->
+                            <div class="btn-group btn-group-lg" role="group">
+                                <button type="button" class="possubmit btn btn-warning"><i class="fa fa-save"></i> Draft
+                                </button>
+                                <button type="button" class="btn btn-success possubmit3" data-type="6"
+                                        data-toggle="modal" data-target="#basicPay"><i class="fa fa-money"></i> Payment
+                                </button>
+                                <button type="button" class="btn btn-primary possubmit2" data-type="4"
+                                        data-toggle="modal" data-target="#cardPay"><i class="fa fa-credit-card"></i>
+                                    Card
+                                </button>
+
+                            </div>
+                            <a href="https://pos.ultimatekode.com/stockreturn/create_client" class="red float-right"><i
+                                    class="fa fa-reply-all"></i></a>
+                        </div>
+
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="content-body">
+    <audio id="beep" src="https://pos.ultimatekode.com/assets/js/beep.wav" autoplay="false"></audio>
+    <div class="modal fade" id="Pos_addCustomer" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <form method="post" id="product_action" class="form-horizontal">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-gradient-directional-blue white">
+                        <i class="icon-user-plus"></i> Add Customer
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only"> Close</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                        </h4></div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <p id="statusMsg"></p><input type="hidden" name="mcustomer_id" id="mcustomer_id" value="0">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5>Billing Address</h5>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="name">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="Name" class="form-control margin-bottom"
+                                               id="mcustomer_name" name="name" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="phone"> Phone</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="Phone" class="form-control margin-bottom"
+                                               name="phone" id="mcustomer_phone">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="email"> Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" placeholder="Email" class="form-control margin-bottom"
+                                               name="email" id="mcustomer_email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="address"> Address</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="Address" class="form-control margin-bottom "
+                                               name="address" id="mcustomer_address1">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="customergroup"> Group</label>
+                                    <div class="col-sm-10">
+                                        <select name="customergroup" class="form-control">
+                                            <option value="1">Default Group</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
+                        <input type="submit" id="mclient_add" class="btn btn-primary submitBtn" value="ADD">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--card-->
+    <div class="modal fade" id="cardPay" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content ">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Make Payment</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span>
+                        <span class="sr-only"> Close</span>
+
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body ">
+                    <p id="statusMsg"></p>
+                    <form role="form" id="card_data">
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="cardNumber">Payment Gateways</label>
+                                <select class="form-control" name="gateway">
+                                    <option value="1">Amex (+4.00 %)</option>
+                                    <option value="2">Visa (+3.00 %)</option>
+                                    <option value="4">PayPal</option>
+                                    <option value="6">2Checkout</option>
+                                </select>
+                            </div>
+                            <div class="col-4"><br><img class="img-responsive pull-right"
+                                                        src="https://pos.ultimatekode.com/assets/images/accepted_c22e0.png">
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-1">
+                            <div class="col">
+                                <button class="btn btn-success btn-lg" type="submit" id="pos_card_pay" data-type="2"><i
+                                        class="fa fa-credit-card"></i> Pay now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <br>Note: Payment Processing fee may apply for some gateways.
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- shipping -->
+
+
+                </div>
+                <!-- Modal Footer -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="basicPay" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <form method="post" id="basicpay_data" class="form-horizontal">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+
+                        <h4 class="modal-title">Make Payment</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only"> Close</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <p id="statusMsg"></p>
+
+                        <div class="text-center"><h1 id="b_total"></h1></div>
+                        <div class="row">
+
+
+                            <div class="col-6">
+                                <div class="card-title">
+                                    <label for="cardNumber">Amount</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control  text-bold-600 blue-grey" name="p_amount"
+                                               placeholder="Amount" onkeypress="return isNumber(event)" id="p_amount"
+                                               onkeyup="update_pay_pos()">
+                                        <span class="input-group-addon"><i class="icon icon-cash"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-title">
+                                    <label for="cardNumber">Payment Method</label>
+                                    <select class="form-control" name="p_method" id="p_method">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Card Swipe">Card Swipe</option>
+                                        <option value="Bank">Bank</option>
+
+                                    </select></div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group  text-bold-600 red">
+                                    <label for="amount">Balance Due </label>
+                                    <input type="text" class="form-control red" name="amount" id="balance1"
+                                           onkeypress="return isNumber(event)" value="0.00" required="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group text-bold-600 text-g">
+                                    <label for="b_change">Change</label>
+                                    <input type="text" onkeypress="return isNumber(event)" class="form-control green"
+                                           name="b_change" id="change_p" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group text-bold-600 text-g">
+                                <label for="account_p">Account</label>
+
+                                <select name="p_account" id="p_account" class="form-control">
+                                    <option value="1">Sales Account / 123456</option>
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-success btn-lg btn-block mb-1" type="submit" id="pos_basic_pay"
+                                        data-type="4"><i class="fa fa-arrow-circle-o-right"></i> Pay now
+                                </button>
+                                <button class="btn btn-info btn-lg btn-block" type="submit" id="pos_basic_print"
+                                        data-type="4"><i class="fa fa-print"></i> Pay now + Print
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+
+
+                        <!-- shipping -->
+
+
+                    </div>
+                    <!-- Modal Footer -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Your Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only"> Close</span>
+                    </button>
+
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="text-center m-1">Active - <span id="r_date">2020-05-17 11:08:37</span></div>
+
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group  text-bold-600 green">
+                                <label for="amount">Cash ($)
+                                </label>
+                                <input type="number" class="form-control green" id="r_cash" value="0.00" readonly="">
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-5 pull-right">
+                            <div class="form-group text-bold-600 blue">
+                                <label for="b_change blue">Card</label>
+                                <input type="number" class="form-control blue" id="r_card" value="0" readonly="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group  text-bold-600 indigo">
+                                <label for="amount">Bank </label>
+                                <input type="number" class="form-control indigo" id="r_bank" value="0.00" readonly="">
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-5 pull-right">
+                            <div class="form-group text-bold-600 red">
+                                <label for="b_change">Change(-)</label>
+                                <input type="number" class="form-control red" id="r_change" value="0" readonly="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row" style="display:none;">
+                        <div class="col-xs-12">
+                            <p class="payment-errors"></p>
+                        </div>
+                    </div>
+
+
+                    <!-- shipping -->
+
+
+                </div>
+                <!-- Modal Footer -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="close_register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title"> CloseYour Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only"> Close</span>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <a href="https://pos.ultimatekode.com//register/close"
+                               class="btn btn-danger btn-lg btn-block" type="submit"><i
+                                    class="icon icon-arrow-circle-o-right"></i> Yes</a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+                </div>
+                <!-- Modal Footer -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="stock_alert" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Stock Alert !</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only"> Close</span>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <div class="row p-1">
+                        <div class="alert alert-danger mb-2" role="alert">
+                            <strong>Oh snap!</strong> Create a new purchase order for this product or edit the stock of
+                            item!
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Modal Footer -->
+
+
+            </div>
+        </div>
+    </div>
+    <div id="shortkeyboard" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title">ShortCuts</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-bordered">
+                        <tbody>
+                        <tr>
+                            <td>Alt+X</td>
+                            <td>Focus to products search</td>
+                        </tr>
+                        <tr>
+                            <td>Alt+C</td>
+                            <td>Focus to customer search</td>
+                        </tr>
+
+                        <tr>
+                            <td>Alt+S (twice)</td>
+                            <td>PayNow + Thermal Print</td>
+                        </tr>
+                        <tr>
+                            <td>Alt+Z</td>
+                            <td>Make Card Payment</td>
+                        </tr>
+                        <tr>
+                            <td>Alt+Q</td>
+                            <td>Select First product</td>
+                        </tr>
+                        <tr>
+                            <td>Alt+N</td>
+                            <td>Create New Invoice</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
