@@ -13,6 +13,6 @@ use api\models\response\Result;
 class Product_categoriesActions {
     public static function getList(){
 
-        return Product_categories::find()->orderBy(['weight' => SORT_ASC])->all();
+        return Product_categories::find()->where(['status' => '0'])->orderBy(['weight' => SORT_ASC])->all();
     }
 }

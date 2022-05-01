@@ -16,6 +16,7 @@ use yii\base\Security;
  * FaqController implements the CRUD actions for Faq model.
  */
 class OrdersSiteController extends RestController {
+
     public function actionList($user_id = null) {
         $user_id = \Yii::$app->request->post("user_id");
         $response = new Response();
@@ -23,7 +24,6 @@ class OrdersSiteController extends RestController {
             return $this->errorResponse("missing parameter user_id",400);
             return $response;
         }
-//            $rcxa = \Yii::$app->request->post('user_id');
             return OrdersSiteAction::getList($user_id);
     }
 

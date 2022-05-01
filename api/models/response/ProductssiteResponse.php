@@ -9,6 +9,8 @@ class ProductssiteResponse
         $category_id,
         $category_name,
         $name,
+        $name_ge,
+        $name_ru,
         $priceBySizes,
         $class_name,
         $m,
@@ -19,6 +21,8 @@ class ProductssiteResponse
         $created_at,
         $nutritional,
         $description,
+        $description_ge,
+        $description_ru,
         $web;
 
 
@@ -31,6 +35,8 @@ class ProductssiteResponse
         $this->is_special = $row['is_special'];
         $this->is_sticks = $row['is_sticks'];
         $this->name = $row['name'];
+        $this->name_ge = $row['name_ge'];
+        $this->name_ru = $row['name_ru'];
         $this->m = $row['m'];
         $this->s= $row['s'];
         $this->xl= $row['xl'];
@@ -40,6 +46,8 @@ class ProductssiteResponse
         $this->created_at = $row['created_at'];
         $this->nutritional = $row['nutritional'];
         $this->description = $row['description'];
+        $this->description_ge = $row['description_ge'];
+        $this->description_ru = $row['description_ru'];
         $this->web = $row['web'];
 
     }

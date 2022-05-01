@@ -1,8 +1,8 @@
 <?php
 return [
-    'adminEmail' => 'noreply@ronnyspizza.ge',
-    'supportEmail' => 'noreply@ronnyspizza.ge',
-    'senderEmail' => 'noreply@ronnyspizza.ge',
-    'senderName' => 'noreply@ronnyspizza.ge',
+    'adminEmail' => 'webmaster@webertela.online',
+    'supportEmail' => 'webmaster@webertela.online',
+    'senderEmail' => 'webmaster@webertela.online',
+    'senderName' => 'webmaster@webertela.online',
     'user.passwordResetTokenExpire' => 3600,
 ];
