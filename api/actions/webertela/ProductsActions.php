@@ -41,9 +41,6 @@ class ProductsActions {
 
         $products = \Yii::$app->db->createCommand($sql)->queryAll(\PDO::FETCH_ASSOC);
 
-
-
-
         foreach ($products as $row) {
             $result[] = new ProductsResponse($row);
         }

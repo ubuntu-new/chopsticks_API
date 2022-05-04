@@ -11,6 +11,9 @@ use Yii;
  *
  * @property int $id
  * @property string $name
+ * @property string $name_ge
+ * @property string $name_ru
+ * @property string $url
  * @property int $iw_id
  * @property int $weight
  */

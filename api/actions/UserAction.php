@@ -113,7 +113,7 @@ class UserAction {
 
     public static function getReceiptByProductId($product_id=0) {
 
-        $sql = "SELECT {{i}}.[[id]],{{i}}.[[name]] , {{i}}.[[isPremium]] FROM {{receipt}} {{r}}
+        $sql = "SELECT {{i}}.[[id]],{{i}}.[[name]],{{i}}.[[name_ge]],{{i}}.[[name_ru]] ,{{i}}.[[url]] , {{i}}.[[isPremium]] FROM {{receipt}} {{r}}
                     INNER JOIN {{ingredients}} {{i}} ON {{r}}.[[ingredients_id]] = {{i}}.[[id]]
                  WHERE {{r}}.[[product_id]] = :product_id ";
 

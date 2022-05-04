@@ -14,6 +14,7 @@ use Yii;
  * @property string $status
  * @property string|null $name_ge
  * @property string|null $name_ru
+ * @property string|null $url
  */
 class Productcategory extends \yii\db\ActiveRecord
 {
@@ -31,7 +32,7 @@ class Productcategory extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name',  'weight'], 'required'],
+            [['name',  'url'], 'required'],
             [['w_id', 'weight'], 'integer'],
             [['w_id'], 'safe'],
             [['status'], 'string'],
@@ -52,6 +53,7 @@ class Productcategory extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status must be 0'),
             'name_ge' => Yii::t('app', 'Name Ge'),
             'name_ru' => Yii::t('app', 'Name Ru'),
+            'url' => Yii::t('app', 'url'),
         ];
     }
 }

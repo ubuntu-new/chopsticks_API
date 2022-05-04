@@ -2,7 +2,7 @@
 
 namespace rest\modules\v1\controllers\webertela;
 
-use api\models\database\webetrela\Products;
+
 use api\actions\webertela\ProductsActions;
 use yii\rest\Controller;
 use rest\models\response\Response;
@@ -25,10 +25,10 @@ class ProductsController extends Controller
         $result = ProductsActions::getList($category_id);
 
         $response = new Response();
-//        if (!$category_id) {
-//            $response->error_message = "Missing parameter: 'category_id'";
-//            return $response;
-//        }
+        if (!$category_id) {
+            $response->error_message = "Missing parameter: 'category_id'";
+            return $response;
+        }
 
         $response->is_error =  !$result;
         $response->error_message = !$result ? 'No data' : '';

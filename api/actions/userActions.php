@@ -32,7 +32,7 @@ class userActions
 
         $user = new User();
 
-        if($user->findByUsername($username) || $user->findByEmail($email)) {
+        if($user->findByUsername($username)) {
             $result = "User_exists";
         }
         else {

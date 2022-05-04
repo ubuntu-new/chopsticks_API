@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model api\models\database\webetrela\Productcategory */
+/* @var $model api\models\database\webetrela\Ingredients */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Productcategories'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Ingredients'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="productcategory-view">
+<div class="ingredients-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -31,12 +31,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'name',
-//            'w_id',
-            'weight',
-            'status',
-            'url',
             'name_ge',
             'name_ru',
+            'weight',
+            'isPremium',
+            'base',
+            'class_name',
+            'product_category_id',
+            'status',
+            'price',
         ],
     ]) ?>
 
