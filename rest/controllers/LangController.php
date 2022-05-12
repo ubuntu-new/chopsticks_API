@@ -6,6 +6,14 @@ use yii\rest\Controller;
 
 class LangController extends Controller {
 
+
+    public function behaviors() {
+
+        $behaviors['cors'] = ['class' => Cors::class];
+
+        return $behaviors;
+    }
+
     public function beforeAction($action) {
         switch(\Yii::$app->request->get('lang')) {
             case 'ge':

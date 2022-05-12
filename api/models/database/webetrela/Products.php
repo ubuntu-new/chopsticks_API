@@ -1,7 +1,6 @@
 <?php
 
 namespace api\models\database\webetrela;
-
 use Yii;
 
 /**
@@ -31,6 +30,19 @@ use Yii;
  */
 class Products extends \yii\db\ActiveRecord
 {
+    public $image;
+    public $gallery;
+    /**
+     * {@inheritdoc}
+     */
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
+    }
     /**
      * {@inheritdoc}
      */
@@ -47,9 +59,10 @@ class Products extends \yii\db\ActiveRecord
         return [
             [[ 'name', 'name_ge', 'name_ru', 'price','status'], 'required'],
             [['w_id', 'category_id', 'weight', 'is_special', 'created_at', 'status'], 'integer'],
-            [['w_id','is_promo', 'created_at','description','description_ru','description_ge','class_name', 'category_name','category_id','w_id'], 'safe'],
+            [['w_id','is_promo', 'created_at','description','description_ru','description_ge','class_name', 'category_name','category_id','w_id','cat_url'], 'safe'],
             [['price', 'web', 'nutritional', 'description','description_ru','description_ge', 'is_sticks', 'gallery', 'is_promo'], 'string'],
             [['category_name', 'name', 'class_name', 'price_sale'], 'string', 'max' => 255],
+            [['image'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
         ];
     }
 
@@ -80,4 +93,20 @@ class Products extends \yii\db\ActiveRecord
             'is_promo' => Yii::t('app', 'Is Promo'),
         ];
     }
-}
+
+
+
+    public function upload(){//
+
+        if($this->validate()){
+            $path = 'images/uploads/'.$this->image->baseName.'.'.$this->image->extension;
+            $this->image->saveAs($path);
+            $this->attachImage($path);
+            @unlink($path);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    }

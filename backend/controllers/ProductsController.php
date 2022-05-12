@@ -8,6 +8,7 @@ use api\models\database\webetrela\ProductsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ProductsController implements the CRUD actions for Products model.
@@ -33,6 +34,7 @@ class ProductsController extends Controller
      * Lists all Products models.
      * @return mixed
      */
+
     public function actionIndex()
     {
         $searchModel = new ProductsSearch();
@@ -62,11 +64,18 @@ class ProductsController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
+
     public function actionCreate()
     {
         $model = new Products();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->removeImage($model->getImage());
+            $model->image = UploadedFile::getInstance($model , 'image');
+            if($model->image){
+                $model->upload();
+            }
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -87,6 +96,17 @@ class ProductsController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+
+            $image =  UploadedFile::getInstance($model , 'image');
+            $model->image =$image;
+            if(!empty($image) && $image->size !== 0) {
+                $model->removeImage( $model->getImage());
+            }
+
+            if($model->image){
+                $model->upload();
+            }
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

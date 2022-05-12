@@ -21,22 +21,27 @@ class ProductsActions {
     }
 
 
-    public static function getList($category_id = null){
+    public static function getList($url = null){
 
         $result = [];
-        if ($category_id){
+        if ($url){
 
-        $sql = "SELECT {{p}}.*,{{m}}.[[s]],{{m}}.[[m]],{{m}}.[[xl]] FROM {{products}} {{p}}
-                    LEFT JOIN {{products_images}} {{m}} ON {{m}}.[[procts_id]] = [[p]].[[id]]
-                /*WHERE {{p}}.[[status]] = 1 */
-                 where {{p}}.[[category_id]] = $category_id AND {{p}}.[[status]] = '1'";
+//        $sql = "SELECT {{p}}.*,{{m}}.[[s]],{{m}}.[[m]],{{m}}.[[xl]],{{pc}}.[[url]] FROM {{products}} {{p}}
+//                    LEFT JOIN {{products_images}} {{m}} ON {{m}}.[[procts_id]] = [[p]].[[id]]
+//                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
+//                 where {{pc}}.[[url]] = '$url' AND {{p}}.[[status]] = '1'";
+
+        $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
+                    LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
+                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
+                 where {{pc}}.[[url]] = '$url' AND {{p}}.[[status]] = '1'";
 
         }
         else {
-            $sql = "SELECT {{p}}.*,{{m}}.[[s]],{{m}}.[[m]],{{m}}.[[xl]] FROM {{products}} {{p}}
-                    LEFT JOIN {{products_images}} {{m}} ON {{m}}.[[procts_id]] = [[p]].[[id]]
-                /*WHERE {{p}}.[[status]] = 1 */
-                 where {{p}}.[[status]] = '1'";
+            $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
+                    LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
+                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
+                 where  {{p}}.[[status]] = '1'";
         }
 
         $products = \Yii::$app->db->createCommand($sql)->queryAll(\PDO::FETCH_ASSOC);

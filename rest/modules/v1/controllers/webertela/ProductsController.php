@@ -17,7 +17,24 @@ class ProductsController extends Controller
             ],
         ];
     }
+
     public function actionList()
+    {
+
+        $url = \Yii::$app->request->post("url");
+
+        $result = ProductsActions::getList($url);
+
+        $response = new Response();
+
+
+        $response->is_error =  !$result;
+        $response->error_message = !$result ? 'No data' : '';
+        $response->data = $result;
+        return $response;
+    }
+
+    public function actionListOld()
     {
 
         $category_id = \Yii::$app->request->post("category_id");

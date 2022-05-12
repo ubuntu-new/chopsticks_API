@@ -10,6 +10,8 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Products'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
+$image = $model->getImage();
+$image->getPath();
 ?>
 <div class="products-view">
 
@@ -30,25 +32,36 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'w_id',
-            'category_id',
+//            'w_id',
+//            'category_id',
             'category_name',
+            [
+                'attribute'=>'image',
+                'value'=> Html::img(Yii::getAlias('@web').'/'.$image->getPath(), ['alt'=>'some', 'class'=>'thing', 'height'=>'150px', 'width'=>'150px']), ['site/zoom'],
+//                'value'=> Html::a(Html::img(Yii::getAlias('@web').'/'.$img->getPath(), ['alt'=>'some', 'class'=>'thing', 'height'=>'100px', 'width'=>'100px']), ['site/zoom']),
+                'format'=> ['raw'],
+            ],
             'name',
-            'price:ntext',
-            'weight',
-            'class_name',
-            'is_special',
-            'created_at',
-            'status',
-            'web',
-            'nutritional:ntext',
-            'description:ntext',
-            'is_sticks',
-            'price_sale',
-            'gallery',
-            'is_promo',
             'name_ge',
             'name_ru',
+            'description:ntext',
+            'description_ge:ntext',
+            'description_ru:ntext',
+            'price',
+            'price_sale',
+            'weight',
+//            'class_name',
+            'is_special',
+//            'created_at',
+            'status',
+            'web',
+//            'nutritional:ntext',
+
+//            'is_sticks',
+
+//            'gallery',
+            'is_promo',
+
             'description_ge:ntext',
             'description_ru:ntext',
         ],

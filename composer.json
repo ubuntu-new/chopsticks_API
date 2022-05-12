@@ -23,7 +23,10 @@
         "mike42/escpos-php": "^3.0",
         "kreait/firebase-php": "^4.17",
         "guzzlehttp/guzzle": "^7.0",
-        "2amigos/yii2-tinymce-widget": "~1.1"
+        "2amigos/yii2-tinymce-widget": "~1.1",
+        "2amigos/yii2-ckeditor-widget" : "~2.1",
+        "mihaildev/yii2-elfinder": "*",
+        "costa-rico/yii2-images": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

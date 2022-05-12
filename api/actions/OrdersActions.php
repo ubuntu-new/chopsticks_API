@@ -35,8 +35,7 @@ class OrdersActions
 
     }
 
-    public static function OrdersCreate($order_data = null, $customer =null) {
-
+    public static function OrdersCreate($order_data = null, $customer =null, $user_id) {
 
         $transaction = \Yii::$app->db->beginTransaction();
         try {
@@ -45,10 +44,12 @@ class OrdersActions
                 $order->order_data	 = $order_data;
                 $order->customer	 = $customer;
                 $order->status = Status::getActive();
-                $order->created_at =date("Y-m-d h:i:s");
-                $order->user_id = \Yii::$app->user->getId();
+             //   $order->created_at =date("Y-m-d h:i:s");
+                $order->user_id = $user_id;
                 $order->save();
+
                 $add_id =  $order->id;
+
                 $transaction->commit();
             return $add_id;
         } catch (\yii\db\Exception $ex) {
@@ -60,7 +61,5 @@ class OrdersActions
 
 
     }
-
-
 
 }

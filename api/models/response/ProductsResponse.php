@@ -12,10 +12,12 @@ class ProductsResponse
         $name_ge,
         $name_ru,
         $priceBySizes,
+        $price,
         $class_name,
         $m,
         $s,
         $xl,
+        $filePath,
         $is_special,
         $is_sticks,
         $description,
@@ -25,6 +27,7 @@ class ProductsResponse
         $price_sale,
         $is_promo,
         $status,
+        $url,
         $web,
         $weight,
         $created_at;
@@ -35,6 +38,7 @@ class ProductsResponse
         $this->id = $row['id'];
         $this->w_id = $row['w_id'];
         $this->category_id = $row['category_id'];
+        $this->url= $row['url'];
         $this->category_name = $row['category_name'];
         $this->is_special = $row['is_special'];
         $this->is_sticks = $row['is_sticks'];
@@ -43,9 +47,10 @@ class ProductsResponse
         $this->name_ru = $row['name_ru'];
         $this->m = $row['m'];
         $this->s= $row['s'];
+        $this->filePath= $row['filePath'];
         $this->xl= $row['xl'];
-        $this->price = $row["category_id"]==3?-2:$row['price'];
-        $this->priceBySizes = $row["category_id"]==3?\Opis\Closure\unserialize($row['price']):$row['price'];
+        $this->price = $row['price'];
+        $this->priceBySizes = $row["category_id"]==3? unserialize($row['price']):$row['price'];
         $this->description = $row["description"];
         $this->description_ge = $row["description_ge"];
         $this->description_ru = $row["description_ru"];
