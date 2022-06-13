@@ -4,12 +4,12 @@ namespace api\models\database\webetrela;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use api\models\database\webetrela\ProductCategory;
+use api\models\database\webetrela\Productcategory;
 
 /**
- * ProductCategorySearch represents the model behind the search form of `api\models\database\webetrela\ProductCategory`.
+ * ProductcategorySearch represents the model behind the search form of `api\models\database\webetrela\Productcategory`.
  */
-class ProductCategorySearch extends ProductCategory
+class ProductcategorySearch extends Productcategory
 {
     /**
      * {@inheritdoc}
@@ -40,7 +40,7 @@ class ProductCategorySearch extends ProductCategory
      */
     public function search($params)
     {
-        $query = ProductCategory::find();
+        $query = Productcategory::find();
 
         // add conditions that should always apply here
 

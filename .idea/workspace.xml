@@ -1,50 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/api/models/database/webetrela/Orders.php" line="38" />
+    <bookmark url="file://$PROJECT_DIR$/api/models/database/webetrela/Orders.php" line="39" />
     <bookmark url="file://$PROJECT_DIR$/frontend/config/main.php" line="62" />
     <bookmark url="file://$PROJECT_DIR$/rest/modules/v1/controllers/webertela/OrdersController.php" line="26" />
-    <bookmark url="file://$PROJECT_DIR$/backend/controllers/ProductsController.php" line="67" />
-    <bookmark url="file://$PROJECT_DIR$/backend/views/orders/index.php" line="38" />
-    <bookmark url="file://$PROJECT_DIR$/backend/views/orders/index.php" line="42" />
+    <bookmark url="file://$PROJECT_DIR$/backend/controllers/ProductsController.php" line="80" />
+    <bookmark url="file://$PROJECT_DIR$/backend/views/orders/index.php" line="227" />
+    <bookmark url="file://$PROJECT_DIR$/backend/views/orders/index.php" line="43" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985f6a34-730b-4411-b128-37fbdcaaf0f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/chopsticks-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chopsticks-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/database/webetrela/AuthAssignment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/views/orders/archive.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/views/orders/print.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/actions/OrdersActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/actions/OrdersActions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/actions/userActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/actions/userActions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/actions/webertela/ProductsActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/actions/webertela/ProductsActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/database/OrderStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/database/OrderStatus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/database/webetrela/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/database/webetrela/Orders.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/database/webetrela/ProductcategorySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/database/webetrela/ProductcategorySearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/database/webetrela/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/database/webetrela/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/response/ProductsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/response/ProductsResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/database/webetrela/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/database/webetrela/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/response/OrdersResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/response/OrdersResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/response/Product_categoriesResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/response/Product_categoriesResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/response/webertela/ProductsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/response/webertela/ProductsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/IngredientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/IngredientsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ProductcategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ProductcategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/orders/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/orders/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/orders/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/orders/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/views/products/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/views/products/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/products/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/_search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/backend/views/productcategory/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/_form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/_search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web/views/productcategory/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/controllers/LangController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest/controllers/LangController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266724c5d96e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626672523129e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/62667259e6b49.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266725d6468c.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/62667319efd8a.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626674b259d7f.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626674bcc4440.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626674e08f1b5.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626674eede723.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626674fadd0f7.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266750a26e48.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266750e57bfa.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266751b3ebf7.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626675601908c.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626675ea09389.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626675f25f145.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676010c122.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/62667637b4f22.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266764426f0b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266765a02931.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676682e399.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266767124f7e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266768ee884b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266769a8b5ee.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676a1044a2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676ceb0544.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676eeb5d2f.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626676f1b1a90.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266770371660.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266770e0a1e1.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/62667714595b8.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266773de8119.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266776c55393.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626678fe225c7.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626679052023b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626679380a90f.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266793c2d10d.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626680a683782.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626680daf2df8.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266812d29524.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266816587bda.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266816817185.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/626682753ca48.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/6266827931c19.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/debug/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/rest/runtime/debug/index.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/rest/runtime/logs/app.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,17 +111,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="webertnz_chopssticks@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webertnz_chopssticks@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webertnz_chopssticks@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="webertnz_chopssticks: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -92,11 +119,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OrdersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/OrdersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-41">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+              <folding>
+                <element signature="e#39#75#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderStatus.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/models/database/OrderStatus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/orders/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="108" column="53" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="53" />
+            <state relative-caret-position="223">
+              <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
               <folding>
                 <element signature="e#7#28#0#PHP" expanded="true" />
               </folding>
@@ -104,90 +152,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/web/css/site.css">
+      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/orders/archive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            <state relative-caret-position="17">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding>
+                <element signature="e#7#28#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#36#42#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#38#44#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#38#44#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#36#42#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#40#46#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#39#45#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#36#42#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+                <element signature="e#35#41#0" expanded="true" />
+                <element signature="e#28#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/orders/view.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="48" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/orders/_form.php">
+      <file leaf-file-name="print.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/orders/print.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="706">
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/webertela/ProductsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="e#58#100#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrdersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrdersActions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/actions/OrdersActions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-              <folding>
-                <element signature="e#113#158#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Orders.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Orders.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductsActions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/actions/webertela/ProductsActions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#41#84#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,17 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Create</find>
-      <find>crea</find>
-      <find>b</find>
-      <find>created_at</find>
-      <find>site</find>
-      <find>fin</find>
-      <find>getauth</find>
-      <find>passwor</find>
-      <find>validatePassword</find>
-      <find>roductsSIte</find>
-      <find>list</find>
       <find>nutritional</find>
       <find>class_name</find>
       <find>create</find>
@@ -227,6 +230,17 @@
       <find>ric</find>
       <find>getPrimaryKey</find>
       <find>bla</find>
+      <find>alert</find>
+      <find>fullname</find>
+      <find>OrderActions</find>
+      <find>List</find>
+      <find>list</find>
+      <find>order</find>
+      <find>dataProvider</find>
+      <find>actionPrint</find>
+      <find>Print</find>
+      <find>print</find>
+      <find>stat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,24 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2/rest/ActiveController.php" />
-        <option value="$PROJECT_DIR$/api/models/database/webetrela/OrdersQuery.php" />
-        <option value="$PROJECT_DIR$/api/models/response/ProductssiteResponse.php" />
-        <option value="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/AppController.php" />
-        <option value="$PROJECT_DIR$/rest/config/params.php" />
-        <option value="$PROJECT_DIR$/api/models/database/User.php" />
-        <option value="$PROJECT_DIR$/api/models/database/webetrela/User.php" />
-        <option value="$PROJECT_DIR$/frontend/config/main.php" />
-        <option value="$PROJECT_DIR$/common/config/params.php" />
-        <option value="$PROJECT_DIR$/frontend/config/params.php" />
-        <option value="$PROJECT_DIR$/rest/modules/v1/controllers/OrdersSiteController.php" />
-        <option value="$PROJECT_DIR$/rest/modules/v1/controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/api/models/database/webetrela/ProductCategory.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ProductCategoryController.php" />
-        <option value="$PROJECT_DIR$/backend/views/ingredients/_form.php" />
-        <option value="$PROJECT_DIR$/api/models/database/webetrela/Productcategory.php" />
-        <option value="$PROJECT_DIR$/backend/views/productcategory/_form.php" />
-        <option value="$PROJECT_DIR$/backend/views/productcategory/index.php" />
         <option value="$PROJECT_DIR$/backend/views/productcategory/view.php" />
         <option value="$PROJECT_DIR$/api/models/database/webetrela/IngredientsSearch.php" />
         <option value="$PROJECT_DIR$/api/models/database/webetrela/Ingredients.php" />
@@ -261,31 +257,49 @@
         <option value="$PROJECT_DIR$/rest/controllers/LangController.php" />
         <option value="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/ProductsController.php" />
         <option value="$PROJECT_DIR$/vendor/mdmsoft/yii2-admin/models/User.php" />
-        <option value="$PROJECT_DIR$/api/actions/userActions.php" />
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/UserController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/console/config/main.php" />
         <option value="$PROJECT_DIR$/common/config/main-local.php" />
         <option value="$PROJECT_DIR$/rest/config/main.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/backend/views/products/view.php" />
         <option value="$PROJECT_DIR$/backend/config/main.php" />
         <option value="$PROJECT_DIR$/api/models/response/ProductsResponse.php" />
         <option value="$PROJECT_DIR$/api/models/database/webetrela/Image.php" />
         <option value="$PROJECT_DIR$/api/models/database/webetrela/Products.php" />
-        <option value="$PROJECT_DIR$/backend/views/products/_form.php" />
-        <option value="$PROJECT_DIR$/backend/views/site/index.php" />
-        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/backend/views/orders/_form.php" />
         <option value="$PROJECT_DIR$/backend/views/products/index.php" />
-        <option value="$PROJECT_DIR$/api/actions/webertela/ProductsActions.php" />
         <option value="$PROJECT_DIR$/rest/modules/v1/controllers/webertela/OrdersController.php" />
+        <option value="$PROJECT_DIR$/api/actions/userActions.php" />
+        <option value="$PROJECT_DIR$/backend/views/productcategory/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/api/actions/OrdersSiteAction.php" />
+        <option value="$PROJECT_DIR$/api/models/database/webetrela/AuthAssignment.php" />
+        <option value="$PROJECT_DIR$/api/models/response/OrdersResponse.php" />
         <option value="$PROJECT_DIR$/api/models/database/webetrela/Orders.php" />
         <option value="$PROJECT_DIR$/api/actions/OrdersActions.php" />
         <option value="$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php" />
-        <option value="$PROJECT_DIR$/backend/views/orders/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/orders/update.php" />
+        <option value="$PROJECT_DIR$/api/models/database/webetrela/User.php" />
         <option value="$PROJECT_DIR$/backend/web/css/site.css" />
+        <option value="$PROJECT_DIR$/backend/views/orders/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/products/_form.php" />
+        <option value="$PROJECT_DIR$/api/models/database/webetrela/About.php" />
+        <option value="$PROJECT_DIR$/backend/views/about/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ProductcategoryController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/IngredientsController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/AboutController.php" />
+        <option value="$PROJECT_DIR$/api/actions/webertela/ProductsActions.php" />
+        <option value="$PROJECT_DIR$/api/actions/SmsActions.php" />
+        <option value="$PROJECT_DIR$/backend/web/views/orders/view.php" />
+        <option value="$PROJECT_DIR$/backend/web/views/orders/print.php" />
+        <option value="$PROJECT_DIR$/backend/views/orders/print.php" />
+        <option value="$PROJECT_DIR$/backend/views/orders/archive.php" />
+        <option value="$PROJECT_DIR$/backend/views/orders/index.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/OrdersController.php" />
+        <option value="$PROJECT_DIR$/api/models/database/OrderStatus.php" />
       </list>
     </option>
   </component>
@@ -297,7 +311,9 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/backend/web/assets/21b5c1ca/package.json" />
       <path value="$PROJECT_DIR$/backend/web/assets/40f82fdf/package.json" />
+      <path value="$PROJECT_DIR$/backend/web/assets/e5d1dd89/package.json" />
       <path value="$PROJECT_DIR$/frontend/web/assets/c99ab121/package.json" />
     </packageJsonPaths>
   </component>
@@ -432,9 +448,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="96" />
-    <option name="width" value="1401" />
-    <option name="height" value="944" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -442,6 +459,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -452,7 +470,44 @@
             <path>
               <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
@@ -465,14 +520,15 @@
               <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
@@ -500,16 +556,24 @@
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chopsticks-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chopsticks-api" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="webertela" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../webertela" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -517,19 +581,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\chopsticks-api\common\models" />
-      <recent name="C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela" />
-      <recent name="C:\xampp\htdocs\chopsticks-api\api\models\response\webertela" />
-      <recent name="C:\xampp\htdocs\chopsticks-api\api\actions\webertela" />
-      <recent name="C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\chopsticks-api\backend\views" />
       <recent name="C:\xampp\htdocs\chopsticks-api\backend\web\images\uploads" />
       <recent name="C:\xampp\htdocs\chopsticks-api\backend\web\images" />
       <recent name="C:\xampp\htdocs\chopsticks-api\api\actions\webertela" />
       <recent name="C:\xampp\htdocs\chopsticks-api\api\actions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\chopsticks-api\backend\web\views\orders" />
+      <recent name="C:\xampp\htdocs\chopsticks-api\api\models\database\webetrela" />
+      <recent name="C:\xampp\htdocs\chopsticks-api\common\models" />
+      <recent name="C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela" />
+      <recent name="C:\xampp\htdocs\chopsticks-api\api\models\response\webertela" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -566,12 +630,26 @@
       <workItem from="1651905587354" duration="17882000" />
       <workItem from="1652012437873" duration="41898000" />
       <workItem from="1652259087395" duration="6244000" />
-      <workItem from="1652338493058" duration="1267000" />
+      <workItem from="1652338493058" duration="12680000" />
+      <workItem from="1653114487192" duration="594000" />
+      <workItem from="1653115459711" duration="649000" />
+      <workItem from="1653138037135" duration="30172000" />
+      <workItem from="1653375604116" duration="22641000" />
+      <workItem from="1653552936855" duration="1789000" />
+      <workItem from="1653888966518" duration="1936000" />
+      <workItem from="1654187541454" duration="3206000" />
+      <workItem from="1654356929273" duration="7317000" />
+      <workItem from="1654669345888" duration="3226000" />
+      <workItem from="1654778489744" duration="6882000" />
+      <workItem from="1654833442689" duration="15285000" />
+      <workItem from="1654951520134" duration="6981000" />
+      <workItem from="1655014159409" duration="4018000" />
+      <workItem from="1655092972645" duration="2537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264338000" />
+    <option name="totallyTimeSpent" value="382984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -580,13 +658,13 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="10" visible="true" weight="0.22294372" />
+      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.22294372" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.31493506" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.108208954" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.21321961" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.15298508" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1076759" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.21641791" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
@@ -601,31 +679,6 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.10554371" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32900432" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.29761904" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.15298508" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.31493506" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.22294372" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.21641791" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -635,313 +688,385 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/views/orders/print.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/BaseObject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/2amigos/yii2-ckeditor-widget/src/CKEditor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="3673" column="20" selection-start-line="3673" selection-start-column="17" selection-end-line="3673" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2b7449e3-1f70-40ba-853c-682d3c3bce03/schema/webertnz_chopssticks/table/user">
+    <entry file="das://2b7449e3-1f70-40ba-853c-682d3c3bce03/schema/webertnz_chopssticks/table/auth_assignment">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/database/Products.php">
+    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/webertela/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/actions/OrdersSiteAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/response/OrdersResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/UploadedFile.php">
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/BaseActiveRecord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+        <state relative-caret-position="247">
+          <caret line="672" column="20" selection-start-line="672" selection-start-column="20" selection-end-line="672" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/costa-rico/yii2-images/Module.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/costa-rico/yii2-images/models/Image.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3746">
-          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/ProductsSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="5" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/params-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/params.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/params.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/config/params.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/config/params-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/main.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/images/cache/placeHolder/placeHolder.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/images/store/Products/Products162/589ea8.jpg" />
-    <entry file="file://$PROJECT_DIR$/backend/web/images/store/Products/Products163/4a3891.jpg" />
-    <entry file="file://$PROJECT_DIR$/backend/web/images/store/Products/Products163/82b2ce.jpg" />
-    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
+    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/SmsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Image.php">
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="247">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/response/ProductsResponse.php">
+    <entry file="file://$PROJECT_DIR$/api/models/database/Ingredients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="459">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Productcategory.php">
+    <entry file="file://$PROJECT_DIR$/api/models/database/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/products/update.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/actions/OrdersActions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/actions/UserAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85b47c12-a7a7-48de-9aec-495e3524cb7d/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Products.php">
+    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Contactinfo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Ingredients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+        <state relative-caret-position="629">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="53" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/About.php" />
     <entry file="file://$PROJECT_DIR$/backend/views/products/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="799">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/AboutSearch.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/About.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/ingredients/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+        <state relative-caret-position="476">
+          <caret line="35" column="14" selection-start-line="24" selection-start-column="12" selection-end-line="35" selection-end-column="14" />
           <folding>
             <element signature="e#39#47#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/IngredientsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/about/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/AboutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ProductcategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/Orders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/Status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="79" lean-forward="true" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/ingredients/_form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="108" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/actions/DriverAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="101" column="104" selection-start-line="101" selection-start-column="104" selection-end-line="101" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/actions/SmsActions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="43" column="142" selection-start-line="43" selection-start-column="135" selection-end-line="43" selection-end-column="142" />
+          <folding>
+            <element signature="e#113#150#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        <state relative-caret-position="578">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="43" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/products/view.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/views/orders/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" selection-start-line="37" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/products/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="109" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/actions/webertela/ProductsActions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#41#84#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/webertela/OrdersController.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/views/orders/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="e#137#178#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/webertela/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="e#58#100#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models/database/webetrela/Orders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="480">
+          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/modules/v1/controllers/OrdersController.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/views/orders/print.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="599">
+          <caret line="36" column="33" selection-start-line="31" selection-start-column="13" selection-end-line="36" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/actions/OrdersActions.php">
+    <entry file="file://$PROJECT_DIR$/backend/web/views/orders/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding>
-            <element signature="e#113#158#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="395">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/orders/_form.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/archive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="17">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#36#42#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#38#44#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#38#44#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#36#42#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#39#45#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#36#42#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/orders/view.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/print.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#39#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/orders/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="108" column="53" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="53" />
+        <state relative-caret-position="223">
+          <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/css/site.css">
+    <entry file="file://$PROJECT_DIR$/api/models/database/OrderStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>

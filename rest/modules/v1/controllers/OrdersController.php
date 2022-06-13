@@ -3,6 +3,7 @@ namespace rest\modules\v1\controllers;
 use api\actions\OrdersActions;
 use api\actions\UserAction;
 use api\models\database\OrderActions;
+use api\actions\SmsActions;
 use rest\controllers\LangController;
 use rest\controllers\RestController;
 use rest\models\response\Response;
@@ -27,17 +28,19 @@ class OrdersController extends LangController  {
 
     }
 
-
     public function actionCreate() {
 
         $items =  (\Yii::$app->request->post('items'))?\Yii::$app->request->post('items'):[];
         $customer = (\Yii::$app->request->post('customer'))?\Yii::$app->request->post('customer'):[];
         $user_id = (\Yii::$app->request->post('user_id'))?\Yii::$app->request->post('user_id'):[];
 
-
             $result = OrdersActions::OrdersCreate(Json::encode($items), Json::encode($customer), $user_id);
 
         return $result;
+    }
+
+    public function actionSms() {
+        return SmsActions::sendSms('599320100', 'BLA');
     }
 
 

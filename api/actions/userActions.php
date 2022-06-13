@@ -29,9 +29,7 @@ class userActions
 
     public static function signupUser($username=null, $email = null, $password = null) {
         $result = null;
-
         $user = new User();
-
         if($user->findByUsername($username) || $user->findByEmail($email)) {
             $result = "User_exists";
         }

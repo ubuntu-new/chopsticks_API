@@ -34,14 +34,16 @@ class ProductsActions {
         $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
                     LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
                     INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
-                 where {{pc}}.[[url]] = '$url' AND {{p}}.[[status]] = '1'";
+                    WHERE {{pc}}.[[url]] = '$url' AND {{p}}.[[status]] = '1'
+                    ORDER BY {{p}}.[[weight]] ASC ";
 
         }
         else {
             $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
                     LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
                     INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
-                 where  {{p}}.[[status]] = '1'";
+                    WHERE  {{p}}.[[status]] = '1'
+                    ORDER BY {{p}}.[[weight]] ASC ";
         }
 
         $products = \Yii::$app->db->createCommand($sql)->queryAll(\PDO::FETCH_ASSOC);

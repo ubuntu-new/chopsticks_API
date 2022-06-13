@@ -24,7 +24,8 @@ class ProductsResponse
         $m,
         $s,
         $xl,
-        $is_promo;
+        $is_promo,
+	$url;
 
 
     public function __construct($row) {
@@ -48,6 +49,7 @@ class ProductsResponse
         $this->s= $row['s'];
         $this->xl= $row['xl'];
         $this->is_promo = $row["is-promo"];
+	$this->url = $row["url"];
 
 
 

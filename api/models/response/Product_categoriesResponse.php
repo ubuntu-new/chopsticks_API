@@ -16,6 +16,7 @@ class Product_categoriesResponse
         $this->name = $row['name'];
         $this->w_id = $row['w_id'];
         $this->weight = $row['weight'];
+	$this->url = $row['url'];
     }
 
 }

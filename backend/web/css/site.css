@@ -122,3 +122,8 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.table-bordered > tbody > tr > td
+{
+    word-break: break-all;
+}

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4d54bd6e-5c96-49cb-abbb-d58c1a55101e" name="chopsticks-webertela" url="http://88.198.220.232">
-        <fileTransfer host="88.198.220.232" port="21" rootFolder="/chopsticks/back_api">
+      <webServer id="4d54bd6e-5c96-49cb-abbb-d58c1a55101e" name="chopsticks-webertela" url="http://www353.your-server.de">
+        <fileTransfer host="www353.your-server.de" port="21" rootFolder="/chopsticks/back_api/">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

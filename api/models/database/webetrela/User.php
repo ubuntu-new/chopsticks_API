@@ -22,8 +22,11 @@ use Yii;
  * @property string|null $verification_token
  * @property string $access_token
  * @property string $branch
+ * @property string|null $driver_name
+ * @property string $position
  * @property int $branch_id
  * @property int|null $created_by
+ * @property int|null $phone
  */
 class User extends \yii\db\ActiveRecord
 {
@@ -46,7 +49,7 @@ class User extends \yii\db\ActiveRecord
             [['fullname', 'username', 'password_hash', 'pin', 'password_reset_token', 'email', 'verification_token', 'access_token', 'branch'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 255],
             [['username'], 'unique'],
-            [['auth_key', 'pin', 'access_token', 'branch', 'branch_id'], 'safe'],
+            [['auth_key', 'pin', 'access_token', 'branch', 'branch_id','driver_name','position','phone'], 'safe'],
             [['email'], 'unique'],
 //            [['email'], 'unique', 'targetClass' => User::className(), 'message' => 'Пользователь уже существует'],
             [['password_reset_token'], 'unique'],
@@ -75,8 +78,12 @@ class User extends \yii\db\ActiveRecord
             'branch' => Yii::t('app', 'Branch'),
             'branch_id' => Yii::t('app', 'Branch ID'),
             'created_by' => Yii::t('app', 'Created By'),
+            'driver_name' => Yii::t('app', 'Driver_name'),
+            'position' => Yii::t('app', 'Position'),
+            'phone' => Yii::t('app', 'Driver Phone'),
         ];
     }
+
 
 
 

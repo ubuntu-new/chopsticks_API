@@ -32,7 +32,6 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'category_name',
             'name',
             'name_ge',
-
             //'price:ntext',
             //'weight',
             //'class_name',

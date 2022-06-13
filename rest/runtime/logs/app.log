@@ -36873,3 +36873,232 @@ Stack trace:
 ]
 
 $_POST = []
+2022-05-24 15:06:08 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: mobile in C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\SmsController.php:26
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\SmsController.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 [internal function]: rest\modules\v1\controllers\SmsController->actionSend()
+#2 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('send', Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/sms/send', Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2022-05-24 15:06:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/sms/send'
+]
+
+$_POST = []
+2022-05-24 15:15:26 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/orders/sms in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('sms', Array)
+#1 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/orders/sms', Array)
+#2 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-05-24 15:15:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/orders/sms'
+]
+
+$_POST = [
+    'mobile' => '599320100'
+    'text' => 'BLA'
+]
+2022-05-24 15:15:45 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/orders/sms in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('sms', Array)
+#1 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/orders/sms', Array)
+#2 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-05-24 15:15:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/orders/sms'
+]
+
+$_POST = []
+2022-05-24 15:18:09 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/orders/sms in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('sms', Array)
+#1 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/orders/sms', Array)
+#2 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-05-24 15:18:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/orders/sms'
+]
+
+$_POST = []
+2022-05-24 15:19:21 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/orders/sms in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('sms', Array)
+#1 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/orders/sms', Array)
+#2 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2022-05-24 15:19:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/orders/sms'
+]
+
+$_POST = []
+2022-06-02 20:27:54 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList(NULL)
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:27:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = []
+2022-06-02 20:29:37 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList(NULL)
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:29:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = []
+2022-06-02 20:29:43 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList('wok')
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:29:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = [
+    'url' => 'wok'
+]
+2022-06-02 20:29:46 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList('spring-rolls')
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:29:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = [
+    'url' => 'spring-rolls'
+]
+2022-06-02 20:29:56 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList('spring-rolls')
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:29:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = [
+    'url' => 'spring-rolls'
+]
+2022-06-02 20:31:04 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList(NULL)
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:31:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = [
+    'customer_id' => '2'
+    'orderData' => '{name: \'iko\'}'
+]
+2022-06-02 20:36:13 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: m in C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php:48
+Stack trace:
+#0 C:\xampp\htdocs\chopsticks-api\api\models\response\ProductsResponse.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\chopsticks-api\api\actions\webertela\ProductsActions.php(52): api\models\response\ProductsResponse->__construct(Array)
+#2 C:\xampp\htdocs\chopsticks-api\rest\modules\v1\controllers\webertela\ProductsController.php(26): api\actions\webertela\ProductsActions::getList(NULL)
+#3 [internal function]: rest\modules\v1\controllers\webertela\ProductsController->actionList()
+#4 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/webertela/pr...', Array)
+#8 C:\xampp\htdocs\chopsticks-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\chopsticks-api\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2022-06-02 20:36:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/webertela/products/list'
+]
+
+$_POST = [
+    'customer_id' => '2'
+    'orderData' => '{name: \'iko\'}'
+]

@@ -25,7 +25,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<h3>ID: <?=Yii::$app->user->id; ?></h3>
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -41,6 +41,7 @@ AppAsset::register($this);
         ['label' => 'Product', 'url' => ['/products/index']],
         ['label' => 'Ingredients', 'url' => ['/ingredients/index']],
         ['label' => 'Orders', 'url' => ['/orders/index']],
+        ['label' => 'About', 'url' => ['/about/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

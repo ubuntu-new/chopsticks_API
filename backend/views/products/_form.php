@@ -44,6 +44,8 @@ $image->getPath();
 
     <?= $form->field($model, 'price_sale')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'weight')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'is_special')->textInput() ?>
 
     <?= $form->field($model, 'status')->textInput() ?>

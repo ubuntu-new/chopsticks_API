@@ -24,6 +24,7 @@ use Yii;
  * @property string|null $created_at
  * @property string|null $updated_at
  * @property string|null $created_by
+ * @property string|null $driver_name
  * @property string|null $customer
  */
 class Orders extends \yii\db\ActiveRecord
@@ -44,7 +45,7 @@ class Orders extends \yii\db\ActiveRecord
         return [
             [['user_id', 'status', 'payment_method_id', 'delivery_method_id', 'is_discounted', 'driver_id', 'created_at', 'updated_at', 'created_by'], 'integer'],
             [['order_data', 'customer'], 'string'],
-            [['finish_date'], 'safe'],
+            [['finish_date','driver_name'], 'safe'],
             [['duration', 'promise_date', 'accept_date', 'start_delivery', 'end_delivery'], 'string', 'max' => 255],
         ];
     }
@@ -58,7 +59,7 @@ class Orders extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'user_id' => Yii::t('app', 'User ID'),
             'duration' => Yii::t('app', 'Duration'),
-            'status' => Yii::t('app', 'Status'),
+            'status' => Yii::t('app', 'Order Status'),
             'payment_method_id' => Yii::t('app', 'Payment Method ID'),
             'delivery_method_id' => Yii::t('app', 'Delivery Method ID'),
             'order_data' => Yii::t('app', 'Order Data'),
@@ -73,6 +74,7 @@ class Orders extends \yii\db\ActiveRecord
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_by' => Yii::t('app', 'Created By'),
             'customer' => Yii::t('app', 'Customer'),
+            'driver_name' => Yii::t('app', 'Driver fullnamename'),
         ];
     }
 }
