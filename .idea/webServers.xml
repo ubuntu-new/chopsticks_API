@@ -10,6 +10,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="39f6985c-09dd-479a-a520-26581b47c0dc" name="chopsticks.com.ge" url="http://www104.your-server.de">
+        <fileTransfer host="www104.your-server.de" port="22" rootFolder="/public_html/back_api" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

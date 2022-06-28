@@ -1,31 +1,15 @@
-#RewriteEngine On
-
-# End the processing, if a rewrite already occurred
-#RewriteRule ^(frontend|rest)/web/ - [L]
-
-# Handle the case of backend, skip ([S=1]) the following rule, if current matched
-#RewriteRule ^worktddask(/(.*))?$ worktask/web/$2 [S=1]
-#RewriteRule ^rest(/(.*))?$ rest/web/$2 [S=1]
-#RewriteRule ^(frontend)(/(.*))?$ (frontend)/web/$2 [S=1]
-
-# handle the case of frontend
-#RewriteRule .* frontend/web/$0
-
-
-
-
-
-Options -Indexes
-Options FollowSymlinks
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
-
-#RewriteCond %{REQUEST_URI} ^/admin/$
-#RewriteRule ^(admin)/$ /$1 [R=301,L]
-#RewriteCond %{REQUEST_URI} ^/admin
-#RewriteRule ^admin(/.+)?$ /backend/web/$1 [L,PT]
-
-RewriteCond %{REQUEST_URI} ^.*$
-RewriteRule ^(.*)$ /frontend/web/$1
+#<IfModule mod_rewrite.c>
+#  Options +FollowSymlinks
+#  RewriteEngine on
+#</IfModule>
+#
+#<IfModule mod_rewrite.c>
+#   RewriteCond %{REQUEST_URI} ^/.*
+#   RewriteRule ^(.*)$ web/$1 [L]
+#
+#   RewriteCond %{REQUEST_URI} !^/web/
+#   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteRule ^.*$ web/index.php
+#</IfModule>
+#

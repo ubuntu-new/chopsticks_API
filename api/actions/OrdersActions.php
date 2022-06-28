@@ -39,7 +39,6 @@ class OrdersActions
 
         $transaction = \Yii::$app->db->beginTransaction();
         try {
-
                 $order = new Orders();
                 $order->order_data	 = $order_data;
                 $order->customer	 = $customer;
