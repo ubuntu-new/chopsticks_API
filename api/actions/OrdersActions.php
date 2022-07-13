@@ -35,16 +35,19 @@ class OrdersActions
 
     }
 
-    public static function OrdersCreate($order_data = null, $customer =null, $user_id) {
+    public static function OrdersCreate($order_data =null, $customer =null, $cutlery =null, $lang =null, $user_id =null, $tottalprice =null) {
 
         $transaction = \Yii::$app->db->beginTransaction();
         try {
                 $order = new Orders();
                 $order->order_data	 = $order_data;
                 $order->customer	 = $customer;
+                $order->cutlery	 = $cutlery;
+                $order->lang	 = $lang;
                 $order->status = Status::getActive();
-             //   $order->created_at =date("Y-m-d h:i:s");
+//                $order->created_at =date("Y-m-d h:i:s");
                 $order->user_id = $user_id;
+                $order->tottalPrice = $tottalprice;
                 $order->save();
 
                 $add_id =  $order->id;

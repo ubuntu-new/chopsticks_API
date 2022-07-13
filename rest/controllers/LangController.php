@@ -5,7 +5,15 @@ use yii\filters\Cors;
 use yii\rest\Controller;
 
 class LangController extends Controller {
-
+    public function errorResponse($message,$code) {
+        \Yii::$app->response->statusCode = $code;
+        if ($code>=200 && $code<300)
+            return $this->asJson(['data' => $message]);
+        if ($code>=300 && $code<400)
+            return $this->asJson(['error' => $message]);
+        if ($code>=400 && $code<500)
+            return $this->asJson(['error' => $message]);
+    }
 
     public function behaviors() {
 

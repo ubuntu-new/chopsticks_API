@@ -1,22 +1,15 @@
 <?php
 namespace rest\modules\v1\controllers;
 
-use api\actions\AddressBookAction;
-use api\actions\InboxAction;
 use api\actions\IpayAction;
 use api\actions\OrdersActions;
-use api\actions\TasksAction;
-use Kerox\Push\Adapter\Fcm;
-use Kerox\Push\Push;
 use rest\controllers\LangController;
 use yii\base\Security;
-use yii\imagine\Image;
 
 
 class IpayController extends LangController {
 
 public function actionGetOrderByShopId() {
-
 
     $post = \Yii::$app->request->post();
 
@@ -30,6 +23,8 @@ public function actionGetOrderByShopId() {
     public function actionRequestPay() {
         $post = \Yii::$app->request->post();
 
+        if (!isset($post['user_id']) || empty($post['user_id']))
+            return $this->errorResponse("missing parameter user_id",400);
         if (!isset($post['total_price']) || empty($post['total_price']))
             return $this->errorResponse("missing parameter Total price",400);
         if (!isset($post['items']) || empty($post['items']))
@@ -37,7 +32,7 @@ public function actionGetOrderByShopId() {
         if (!isset($post['order_data']) || empty($post['order_data']))
             return $this->errorResponse("missing parameter order_data",400);
 
-        return IpayAction::RequestPay($post['total_price'], $post['items'],\Opis\Closure\serialize($post["order_data"]));
+        return IpayAction::RequestPay($post['total_price'], $post['items'],serialize($post["order_data"]),serialize($post["order_data"]["customer"]),$post['user_id'] );
 
     }
 
@@ -108,6 +103,7 @@ public function actionGetOrderByShopId() {
 
 
     public function actionCheckoutPayment() {
+
         $post = \Yii::$app->request->post();
         if (!isset($post['order_id']) || empty($post['order_id']))
             return $this->errorResponse("missing parameter order_id",400);
@@ -135,12 +131,17 @@ public function actionGetOrderByShopId() {
 
     // get address bookis
     public function actionPayment() {
-        $post = \Yii::$app->request->post();
+
+//    \Yii::error("Aaaaaaaaaaaaaa");
+
+       $post = \Yii::$app->request->post();
+
+        \Yii::error("Payment".strtolower($post["pre_auth_status"]));
 
 
-//        IpayAction::callbackPayment($post["order_id"],$post["pre_auth_status"]);
+        IpayAction::callbackPayment($post["order_id"],$post["pre_auth_status"]);
 
-//        \Yii::error("Payment".strtolower($post["pre_auth_status"]));
+
         return "Done";
 
     }
@@ -155,6 +156,5 @@ public function actionGetOrderByShopId() {
         return "Reject";
 
     }
-
 
 }

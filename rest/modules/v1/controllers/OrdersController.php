@@ -11,6 +11,14 @@ use yii\helpers\Json;
 
 class OrdersController extends LangController  {
 
+    public function behaviors()
+    {
+        return [
+            'corsFilter' => [
+                'class' => \yii\filters\Cors::class,
+            ],
+        ];
+    }
     public function actionList() {
         $response = new Response();
         $user_id = \Yii::$app->request->post("user_id");
@@ -32,9 +40,13 @@ class OrdersController extends LangController  {
 
         $items =  (\Yii::$app->request->post('items'))?\Yii::$app->request->post('items'):[];
         $customer = (\Yii::$app->request->post('customer'))?\Yii::$app->request->post('customer'):[];
+        $lang = (\Yii::$app->request->post('lang'))?\Yii::$app->request->post('lang'):[];
+        $cutlery = (\Yii::$app->request->post('cutlery'))?\Yii::$app->request->post('cutlery'):[];
         $user_id = (\Yii::$app->request->post('user_id'))?\Yii::$app->request->post('user_id'):[];
+        $tottalprice = (\Yii::$app->request->post('tottalPrice'))?\Yii::$app->request->post('tottalPrice'):[];
 
-            $result = OrdersActions::OrdersCreate(Json::encode($items), Json::encode($customer), $user_id);
+            $result = OrdersActions::OrdersCreate(Json::encode($items), Json::encode($customer), Json::encode($cutlery), $lang, $user_id, $tottalprice);
+
 
         return $result;
     }

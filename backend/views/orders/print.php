@@ -24,6 +24,7 @@ $this->title = $model->id;
 //            'customer:ntext',
             [
                 'attribute'=>'order_data',
+                'headerOptions' => ['style' => 'width:250px'],
                 'value' => function ($model) {
                     $order_data = json_decode($model->order_data);
                     $text = "";
@@ -31,30 +32,52 @@ $this->title = $model->id;
                     {
                         $totalPrice = 0;
                         foreach($order_data as $row) {
-                            $text .=("<strong>Product Name:</strong> ".$row->name."<br><strong>Full Price:</strong> ".$row->price * $row->quantity."<strong>Quantity:</strong> ".$row->quantity)."<br>";
-                            $totalPrice = $totalPrice + ($row->price * $row->quantity);
+                            $text .=("<strong>Product Name:</strong> <br><strong> ".$row->name."</strong>".
+                                    "<br><strong>Quantity: </strong> ".$row->quantity)."
+                                     <br><strong>Tottal Price: </strong> ".$row->price * $row->quantity."<br>";
 
                             if (isset($row->toppings)) {
                                 $text .=("<strong>Toppings:</strong>")."<br>";
                                 foreach ($row->toppings as $topping) {
-                                    $text .=("<span style='padding-left: 30px'></span>".$topping->name." <strong>:</strong> ".$topping->qty."<strong>:</strong> ".$topping->price)."<br>";
+                                    $text .=("<span style='padding-left: 10px'></span><strong>".$topping->name." :</strong> ".$topping->qty."<strong>X</strong> ".$topping->price)."<br>";
                                 }
                             }
 
                             if (isset($row->sauce))
                             {
                                 $text .=("<strong>Sauce:</strong>")."<br>";
-//                                foreach ($row->sauce as $sauce ) {
-                                $text .=("<span style='padding-left: 30px'></span>".$row->sauce->name .$topping->price)."<br>";
-//                                }
+                                foreach ($row->sauce as $sauce ) {
+                                    $text .=("<span style='padding-left: 10px'></span><strong>".$sauce->name.": ".$sauce->qty)."</strong><br>";
+                                }
                             }
 
                             if (isset($row->extras)){
                                 $text .=("<span class='pl-3'><strong>Extra Toppings:</strong></span>")."<br>";
                                 foreach ($row->extras as $extra) {
-                                    $text .=("<span style='padding-left: 30px'></span>".$extra->name." <strong>:</strong> ".$extra->price)."<br>";
+                                    $text .=("<span style='padding-left: 0px'></span><strong>".$extra->name." :</strong> ".$topping->qty." <strong>X</strong>" .$extra->price)."<br>";
                                 }
                             }
+                        }
+
+                    }
+                    return $text;
+
+                },
+                'format'=> ['raw'],
+            ],
+            [
+                'attribute'=>'cutlery',
+                'headerOptions' => ['style' => 'width:150px'],
+                'value' => function ($model) {
+                    $cutlery = json_decode($model->cutlery);
+                    $text = "";
+                    if (isset($cutlery))
+                    {
+                        $totalPrice = 0;
+                        foreach($cutlery as $row) {
+                            $text .=("<strong>Product Name:</strong> <br><strong> ".$row->name."</strong>".
+                                    "<br><strong>Qty: </strong> ".$row->qty)."X".$row->price."
+                                     <br><strong>Price: </strong> ".$row->price * $row->qty."<br>";
                         }
 
                     }
@@ -65,6 +88,8 @@ $this->title = $model->id;
                 'format'=> ['raw'],
             ],
         ],
+
+
     ]) ?>
 
 </div>

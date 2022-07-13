@@ -43,15 +43,17 @@ class IpayAction {
         return  $response->access_token;
     }
 
-    public static function RequestPay($total_price = null, $items = null, $order_data = null ){
+    public static function RequestPay($total_price = null, $items = null, $order_data = null, $customer = null, $user_id = null ){
 
-        $result = OrdersActions::OrdersCreate($order_data,"web");
+
+        $result = OrdersActions::OrdersCreate($order_data , $customer , $user_id );
 
         if($result>1) {
 
             $shop_order_id = \Yii::$app->security->generateRandomString(16);
 
             $curl = curl_init();
+
 
             curl_setopt_array($curl, array(
                 CURLOPT_URL => 'https://ipay.ge/opay/api/v1/checkout/orders',
@@ -63,13 +65,13 @@ class IpayAction {
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                 CURLOPT_CUSTOMREQUEST => 'POST',
                 CURLOPT_POSTFIELDS =>'{
-          "intent": "AUTHORIZE",
+          "intent": "CAPTURE",
           "items": '.json_encode($items).',
           "locale": "ka",
           "shop_order_id": "'.$shop_order_id.'",
-          "redirect_url": "https://constructor.ronnys.info/payment-response?id='.$shop_order_id.'",
+          "redirect_url": "https://chopsticks.com.ge/payment-response?id='.$shop_order_id.'",
           "show_shop_order_id_on_extract": true,
-          "capture_method": "MANUAL",
+          "capture_method": "AUTOMATIC",
           "purchase_units": [
             {
               "amount": {
@@ -89,11 +91,13 @@ class IpayAction {
 
             curl_close($curl);
 
-            $order = Orders::find()->where(["id"=>$result])->one();
-            $order->opay_status = "in_progress";
-            $order->opay_order_id = $response->order_id;
-            $order->shop_order_id = $shop_order_id;
-            $order->save();
+
+            $orderasd = Orders::find()->where(["id"=>$result])->one();
+
+            $orderasd->opay_status = "in_progress";
+            $orderasd->opay_order_id = $response->order_id;
+            $orderasd->shop_order_id = $shop_order_id;
+            $orderasd->save();
 
             return  $response;
         } else return Result::FAILURE;
@@ -216,6 +220,9 @@ class IpayAction {
 
 
     public static function callbackPayment($order_id = null, $status = null) {
+
+
+    //    \Yii::error("asdasd");
 
         $order = Orders::find()->where(["opay_order_id"=>$order_id])->one();
         if($order) {

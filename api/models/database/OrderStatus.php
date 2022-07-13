@@ -34,6 +34,7 @@ class OrderStatus extends ActiveRecord
     public static function getRefund() { return OrderStatus::getStatusIdByKey('refund'); }
     public static function getVoid() { return OrderStatus::getStatusIdByKey('void'); }
     public static function getReject() { return OrderStatus::getStatusIdByKey('reject'); }
+    public static function getOpay() { return OrderStatus::getStatusIdByKey('Opay'); }
     public static function getDeliveredd() { return OrderStatus::getStatusIdByKey('deliveredd'); }
 
 
