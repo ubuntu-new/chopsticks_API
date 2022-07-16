@@ -29,7 +29,6 @@ use Yii;
  * @property string|null $cutlery
  * @property string|null $lang
  * @property string|null $opay_order_id
- * @property string|null $tottalPrice
  */
 class Orders extends \yii\db\ActiveRecord
 {
@@ -47,9 +46,9 @@ class Orders extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'status', 'payment_method_id', 'delivery_method_id', 'is_discounted', 'driver_id', 'created_at', 'updated_at', 'created_by','tottalPrice'], 'integer'],
+            [['user_id', 'status', 'payment_method_id', 'delivery_method_id', 'is_discounted', 'driver_id', 'created_at', 'updated_at', 'created_by'], 'integer'],
 //            [['order_data', 'customer','cutlery','lang'], 'string'],
-            [['finish_date','driver_name','cutlery','lang','created_at','updated_at', 'created_by','opay_order_id','user_id','tottalPrice'], 'safe'],
+            [['finish_date','driver_name','cutlery','lang','created_at','updated_at', 'created_by','opay_order_id','user_id'], 'safe'],
             [['duration', 'promise_date', 'accept_date', 'start_delivery', 'end_delivery'], 'string', 'max' => 255],
         ];
     }
@@ -81,7 +80,7 @@ class Orders extends \yii\db\ActiveRecord
             'driver_name' => Yii::t('app', 'Driver fullnamename'),
             'cutlery' => Yii::t('app', 'Cutlery'),
             'lang' => Yii::t('app', 'Order lang'),
-            'tottalPrice' => Yii::t('app', 'Order Price'),
+
         ];
     }
 }

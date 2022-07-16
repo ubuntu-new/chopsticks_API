@@ -46,4 +46,13 @@ class SmsActions
         $response = file_get_contents($url);
         return json_decode($response);
     }
+
+    public static function sendSmsShop ($mobile = null, $text = null) {
+
+        $sender = 'CHOPSTICKS';
+        $data = 'key=' . urlencode('976e96b8e7964fbe98785a5981d73a56') . '&destination=' . urlencode($mobile) . '&sender=' . urlencode($sender). '&content=' . urlencode($text).'&urgent=true';
+        $url= "http://smsoffice.ge/api/v2/send?".$data;
+        $response = file_get_contents($url);
+        return json_decode($response);
+    }
 }

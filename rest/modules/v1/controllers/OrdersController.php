@@ -43,9 +43,13 @@ class OrdersController extends LangController  {
         $lang = (\Yii::$app->request->post('lang'))?\Yii::$app->request->post('lang'):[];
         $cutlery = (\Yii::$app->request->post('cutlery'))?\Yii::$app->request->post('cutlery'):[];
         $user_id = (\Yii::$app->request->post('user_id'))?\Yii::$app->request->post('user_id'):[];
-        $tottalprice = (\Yii::$app->request->post('tottalPrice'))?\Yii::$app->request->post('tottalPrice'):[];
+//        $tottalprice = (\Yii::$app->request->post('tottalPrice'))?\Yii::$app->request->post('tottalPrice'):[];
 
-            $result = OrdersActions::OrdersCreate(Json::encode($items), Json::encode($customer), Json::encode($cutlery), $lang, $user_id, $tottalprice);
+            $result = OrdersActions::OrdersCreate(Json::encode($items), Json::encode($customer), Json::encode($cutlery), $lang, $user_id);
+            if($result > 1){
+                SmsActions::sendSmsShop('577230988', 'New Order ID:'.$result);
+            }
+
 
 
         return $result;

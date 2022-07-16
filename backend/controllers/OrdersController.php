@@ -122,6 +122,11 @@ class OrdersController extends Controller
 
             $status = OrderStatus::find()->where(['id'=>$status_id])->all();
             $driver = User::find()->where(['id'=>$driver_id])->all();
+//                if($status[0]->id === 1){
+//                    $messageText = "შემოსულია ახალი შეკვეთა";
+//                    $mobile = "577230988";
+//                    SmsActions::sendSmsShop($mobile, $messageText);  //  FOR Shop!!!!!
+//                }
                 if($status[0]->id === 2){
                     $messageTextCustomer = $status[0]->text;
                     SmsActions::sendSmsCustomer($customer->phone, $messageTextCustomer);  //  FOR CUSTOMER!!!!!
