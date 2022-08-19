@@ -33,7 +33,7 @@ class ProductsActions {
 
         $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
                     LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
-                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
+                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[name]] = {{p}}.[[category_name]]
                     WHERE {{pc}}.[[url]] = '$url' AND {{p}}.[[status]] = '1'
                     ORDER BY {{p}}.[[weight]] ASC ";
 
@@ -41,7 +41,7 @@ class ProductsActions {
         else {
             $sql = "SELECT {{p}}.*,{{m}}.[[filePath]],{{pc}}.[[url]] FROM {{products}} {{p}}
                     LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[p]].[[id]] AND {{m}}.[[modelName]] = 'Products' AND {{m}}.[[isMain]] = '1'
-                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[id]] = {{p}}.[[category_id]]
+                    INNER JOIN {{product_category}} {{pc}} ON {{pc}}.[[name]] = {{p}}.[[category_name]]
                     WHERE  {{p}}.[[status]] = '1'
                     ORDER BY {{p}}.[[weight]] ASC ";
         }

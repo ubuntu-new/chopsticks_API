@@ -43,10 +43,13 @@ class IpayAction {
         return  $response->access_token;
     }
 
-    public static function RequestPay($total_price = null, $items = null, $order_data = null, $customer = null, $user_id = null ){
+    public static function RequestPay($items = null, $customer = null, $lang = null, $cutlery=null, $user_id=null, $payment_method = null, $tottalprice = null ){
 
 
-        $result = OrdersActions::OrdersCreate($order_data , $customer , $user_id );
+        $result = OrdersActions::OrdersCreate(Json::encode(unserialize($items)), Json::encode($customer), Json::encode($cutlery), $lang, $user_id, $tottalprice, $payment_method);
+        $item = unserialize($items);
+
+
 
         if($result>1) {
 
@@ -64,30 +67,32 @@ class IpayAction {
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                 CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS =>'{
-          "intent": "CAPTURE",
-          "items": '.json_encode($items).',
-          "locale": "ka",
-          "shop_order_id": "'.$shop_order_id.'",
-          "redirect_url": "https://chopsticks.com.ge/payment-response?id='.$shop_order_id.'",
-          "show_shop_order_id_on_extract": true,
-          "capture_method": "AUTOMATIC",
-          "purchase_units": [
-            {
-              "amount": {
-                "currency_code": "GEL",
-                "value": "'.$total_price.'"
-              }
-            }
-          ]
-        }',
-                CURLOPT_HTTPHEADER => array(
+                CURLOPT_POSTFIELDS => '{
+                  "intent": "CAPTURE",
+                  "items": [],
+                  "locale": "ka",
+                  "shop_order_id": "'.$shop_order_id.'",
+                   "redirect_url": "https://chopsticks.com.ge/payment-response?id='.$shop_order_id.'",
+                  "show_shop_order_id_on_extract": true,
+                  "capture_method": "AUTOMATIC",
+                  "purchase_units": [
+                    {
+                      "amount": {
+                        "currency_code": "GEL",
+                        "value": "1"
+                      }
+                    }
+                  ]
+                }',
+            CURLOPT_HTTPHEADER => array(
                     'Authorization: Bearer '.self::BogAuth(),
                     'Content-Type: application/json'
                 ),
             ));
 
             $response = json_decode(curl_exec($curl));
+
+
 
             curl_close($curl);
 

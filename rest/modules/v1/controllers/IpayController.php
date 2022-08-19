@@ -9,30 +9,29 @@ use yii\base\Security;
 
 class IpayController extends LangController {
 
-public function actionGetOrderByShopId() {
+    public function actionGetOrderByShopId() {
 
-    $post = \Yii::$app->request->post();
+        $post = \Yii::$app->request->post();
 
-    if (!isset($post['shop_order_id']) || empty($post['shop_order_id']))
-        return $this->errorResponse("missing parameter shop_order_id",400);
+        if (!isset($post['shop_order_id']) || empty($post['shop_order_id']))
+            return $this->errorResponse("missing parameter shop_order_id",400);
 
-    return IpayAction::getOrderByShopOrder($post['shop_order_id']);
+        return IpayAction::getOrderByShopOrder($post['shop_order_id']);
 
-}
+    }
 
     public function actionRequestPay() {
         $post = \Yii::$app->request->post();
 
-        if (!isset($post['user_id']) || empty($post['user_id']))
-            return $this->errorResponse("missing parameter user_id",400);
-        if (!isset($post['total_price']) || empty($post['total_price']))
-            return $this->errorResponse("missing parameter Total price",400);
-        if (!isset($post['items']) || empty($post['items']))
-            return $this->errorResponse("missing parameter items",400);
-        if (!isset($post['order_data']) || empty($post['order_data']))
-            return $this->errorResponse("missing parameter order_data",400);
+        $items =  (\Yii::$app->request->post('items'))?\Yii::$app->request->post('items'):[];
+        $customer = (\Yii::$app->request->post('customer'))?\Yii::$app->request->post('customer'):[];
+        $lang = (\Yii::$app->request->post('lang'))?\Yii::$app->request->post('lang'):[];
+        $cutlery = (\Yii::$app->request->post('cutlery'))?\Yii::$app->request->post('cutlery'):[];
+        $user_id = (\Yii::$app->request->post('user_id'))?\Yii::$app->request->post('user_id'):[];
+        $payment_method= (\Yii::$app->request->post('paymentMethod'))?\Yii::$app->request->post('paymentMethod'):[];
+        $tottalprice = (\Yii::$app->request->post('totalprice'))?\Yii::$app->request->post('totalprice'):[];
 
-        return IpayAction::RequestPay($post['total_price'], $post['items'],serialize($post["order_data"]),serialize($post["order_data"]["customer"]),$post['user_id'] );
+        return IpayAction::RequestPay(serialize($items), $customer, $lang, $cutlery, $user_id, $payment_method, $tottalprice);
 
     }
 
@@ -104,6 +103,7 @@ public function actionGetOrderByShopId() {
 
     public function actionCheckoutPayment() {
 
+
         $post = \Yii::$app->request->post();
         if (!isset($post['order_id']) || empty($post['order_id']))
             return $this->errorResponse("missing parameter order_id",400);
@@ -132,24 +132,22 @@ public function actionGetOrderByShopId() {
     // get address bookis
     public function actionPayment() {
 
-//    \Yii::error("Aaaaaaaaaaaaaa");
 
-       $post = \Yii::$app->request->post();
+        $post = \Yii::$app->request->post();
 
-        \Yii::error("Payment".strtolower($post["pre_auth_status"]));
+        \Yii::error($post);
 
-
-        IpayAction::callbackPayment($post["order_id"],$post["pre_auth_status"]);
-
+        IpayAction::callbackPayment($post["order_id"],$post["status"]);
 
         return "Done";
 
     }
 
     public function actionReverse() {
-//        $post = \Yii::$app->request->post();
+        $post = \Yii::$app->request->post();\
+        Yii::error($post);
 //
-//        IpayAction::callbackPayment($post["order_id"],$post["pre_auth_status"]);
+        IpayAction::callbackPayment($post["order_id"],$post["status"]=="success"?"Rejected":$post["status"]);
 //        \Yii::error("REJECT");
 //        \Yii::error($post);
 

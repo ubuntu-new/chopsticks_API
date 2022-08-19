@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use api\actions\IpayAction;
 use api\models\database\OrderStatus;
 use api\models\database\webetrela\User;
 use Yii;
@@ -142,6 +143,7 @@ class OrdersController extends Controller
                     SmsActions::sendSmsCustomer($customer->phone, $messageTextCustomer);
                 }
                 if($status[0]->id === 11){
+                    IpayAction::refund($model->opay_order_id);
                     SmsActions::sendSmsCustomer($customer->phone, $messageTextCustomer);  //  FOR CUSTOMER!!!!!
                 }
             return $this->redirect(['view', 'id' => $model->id]);
